@@ -1,21 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Document</title>
-</head>
-<body>
-<form method="POST">
-<label for="email">Email</label><br>
-<input type="email" name="email" id="email"><br>
-<label for="pas">Password</label><br>
-<input type="password" name="pass" id="pas">
-<input type="submit" onclick="foo()" value="submit">
-<script>
-    function foo(){
-        console.log("Hello Guvi !!!!!.....");
-    }
-</script>
-</form>
-</body>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>State of health</th>
+        <th colspan="2">Fasting Value</th>
+        <th>After remaining</th>
+      </tr>
+      <tr>
+        <td></td>
+        <td>minimum</td>
+        <td>normal</td>
+        <td>2 hrs of eating</td>
+      </tr>
+      <tr>
+        <td>Healthy</td>
+        <td>70</td>
+        <td>100</td>
+        <td>less than 140</td>
+      </tr>
+      <tr>
+        <td>pre-diabetes</td>
+        <td>101</td>
+        <td>126</td>
+        <td>140 to 200</td>
+      </tr>
+    </table>
+  </body>
 </html>
