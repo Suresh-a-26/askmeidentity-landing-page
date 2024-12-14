@@ -2,41 +2,161 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      body {
+        margin: 0px;
+        background-color: lightgoldenrodyellow;
+      }
+      .heading {
+        text-align: center;
+        background-color: brown;
+        color: whitesmoke;
+      }
+      h3 {
+        margin: 0px;
+      }
+      div {
+        margin: 0px;
+      }
+      u {
+        color: orange;
+      }
+      span {
+        color: red;
+      }
       table,
-      tr,
-      th,
-      td {
+      td,
+      tr {
         border: 1px solid black;
         border-collapse: collapse;
       }
     </style>
   </head>
   <body>
-    <table>
+    <div class="heading">
+      <h3>Request For New Pan Card or/Amd Changes Or Correction in Pan Data</h3>
+      <div>
+        <em>
+          Fields marked with <span>*</span>(asterik) are mandatory. To avoid
+          mistake(s). Please refer <u>quidelines</u> and <u>instructions</u></em
+        >
+      </div>
+    </div>
+    <table style="width: 100%">
       <tr>
-        <th>State of health</th>
-        <th colspan="2">Fasting Value</th>
-        <th>After remaining</th>
+        <td></td>
+        <td colspan="2">
+          <span>*</span
+          ><b style="padding-right: 62px">Whether citizen of India</b>
+          <label>Yes</label> <input type="radio" /> <label>NO</label
+          ><input type="radio" />
+        </td>
       </tr>
       <tr>
         <td></td>
-        <td>minimum</td>
-        <td>normal</td>
-        <td>2 hrs of eating</td>
+        <td colspan="2">
+          <span>*</span><b>Permanent Account Number (PAN)</b>
+          <input type="text" />
+        </td>
       </tr>
       <tr>
-        <td>Healthy</td>
-        <td>70</td>
-        <td>100</td>
-        <td>less than 140</td>
+        <td style="width: 2%"><input type="checkbox" /></td>
+        <td colspan="2"><span>*</span><b>1.Name</b></td>
       </tr>
       <tr>
-        <td>pre-diabetes</td>
-        <td>101</td>
-        <td>126</td>
-        <td>140 to 200</td>
+        <td></td>
+        <td colspan="2">
+          <b>Title</b> <label style="padding-left: 18px">Shri/Mr</label>
+          <input type="radio" /><label style="padding-left: 18px"
+            >Smt./Mrs.</label
+          >
+          <input type="radio" />
+          <label style="padding-left: 18px">Kumari/Ms</label>
+          <input type="radio" />
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">
+          <div style="display: inline-block; width: 30%">
+            <label><b>Last Name/Surname</b></label> <br />
+            <input type="text" />
+          </div>
+          <div style="display: inline-block; width: 30%">
+            <label><b>First Name</b></label> <br />
+            <input type="text" />
+          </div>
+          <div style="display: inline-block; width: 30%">
+            <label><b>Middle Name</b></label> <br />
+            <input type="text" />
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">
+          <span>*</span>
+          <b>Name as you would like it printed on the card</b
+          ><span style="color: blue"
+            >(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s,
+            Alias etc. are not allowed)</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2"><input type="text" style="width: 300px" /></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">
+          <b>Details of parents.</b
+          ><span style="color: blue"
+            >(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s,
+            Alias etc. are not allowed)</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <b
+            >Whether mother is single parent and you wish to apply for PAN by
+            furnishing the name of your <br />
+            mother only</b
+          >
+        </td>
+        <td>Yes <input type="radio" /> No <input type="radio" /></td>
+      </tr>
+
+      <tr>
+        <td style="width: 2%"><input type="checkbox" /></td>
+        <td colspan="2">
+          <span>*</span><b>Father's Name</b
+          ><span style="color: blue"
+            >(Mandatory field. Even married women should give father's name
+            only)</span
+          >
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2">
+          <div style="display: inline-block; width: 30%">
+            <label><b>Last Name/Surname</b></label> <br />
+            <input type="text" />
+          </div>
+          <div style="display: inline-block; width: 30%">
+            <label><b>First Name</b></label> <br />
+            <input type="text" />
+          </div>
+          <div style="display: inline-block; width: 30%">
+            <label><b>Middle Name</b></label> <br />
+            <input type="text" />
+          </div>
+        </td>
       </tr>
     </table>
   </body>
